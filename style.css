@@ -152,7 +152,6 @@ h1 {
 }
 
 .area1-img1 {
-  background-color: #FF0000;
   height: 450px;
   background-image: url(assets/f2.jpg);
   background-size: cover;
@@ -232,4 +231,126 @@ h1 {
   background-image: url(assets/f5.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.area4 {
+  display: grid;
+  grid-template-columns: 550px 1fr;
+  background-color: #e8e9e8;
+}
+
+.area4-content {
+  padding: 150px 80px;
+}
+
+.area4-text {
+  text-align: justify;
+  width: 80%;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.area4-img1 {
+  background-image: url(assets/bg3.jpg);
+  background-position: center;
+}
+
+
+footer {
+  background-color: #333;
+  color: #FFF;
+  padding: 80px;
+  text-align: center;
+}
+
+
+@media (min-width: 769px) and (max-width:1140px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .area1{
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .area2{
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .area3{
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+@media (max-width:425px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .banner {
+    background-image: url(assets/bg.jpg);
+  }
+
+  .header-search input {
+    max-width: 130px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+   h2 {
+    font-size: 30px;
+    line-height: 35px;
+   }
+
+  .banner-images img {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #117050;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .area1, .area2, .area3, .area4{
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .area1-content, .area2-content, .area3-content, .area4-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bar {
+    width: 100%;
+  }
+
+.area1 .area1-img1 {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+  .area1-content, .area2-content, .area3-content, .area4-content {
+    padding: 40px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 40px 20px;
+  }
+
 }
