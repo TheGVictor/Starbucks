@@ -205,3 +205,31 @@ h1 {
   background-position: center;
 }
 
+.area3 h2 {
+  text-transform: capitalize;
+}
+
+.area3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.area3-content {
+  padding: 200px 80px;
+  background-image: url(assets/bg2.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.area3-text {
+  text-align: justify;
+  width: 80%;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.area3-img1 {
+  background-image: url(assets/f5.jpg);
+  background-size: cover;
+  background-position: center;
+}
